@@ -66,11 +66,15 @@ nav ul {
 .aboutActive {
   color: var(--Palette3);
 }
-
 .portfolioActive {
   color: var(--Palette2);
 }
-
+.contactActive {
+  color: var(--Palette4);
+}
+.resumeActive {
+  color: var(--Palette5);
+}
 /* END NAV */
 /* END HEADER */
 
