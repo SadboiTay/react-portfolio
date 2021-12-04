@@ -1,0 +1,22 @@
+[
+    {
+        "title": "My Portfolio Website",
+        "techlist": "-CSS, SVG, GSAP, ScrollMagic-",
+        "imageName": "codingQuiz",
+        "laptop": false,
+        "description": "A Responsive website that utilizes the power of creative SVG, Greensock (GSAP) & ScrollMagic powered animations to provide a fluid UI.",
+        "deployed": true,
+        "deployedLink": "https://taylorhakes.dev",
+        "repoLink": "https://github.com/SadboiTay/portfolio2.0"
+    },
+    {
+        "title": "Password Management Application",
+        "techlist": "-Node.js, Express.js, ReST API, MySQL-",
+        "imageName": "passStache",
+        "laptop": false,
+        "description": "Pass-stache is a powerful password storage tool, built with a team of 4 other developers.",
+        "deployed": true,
+        "deployedLink": "https://taylorhakes.dev",
+        "repoLink": "https://github.com/SadboiTay/portfolio2.0"
+    }
+]
