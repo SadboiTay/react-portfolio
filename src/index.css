@@ -188,6 +188,9 @@ nav ul {
 
 .project-footer {
   margin-top: 1rem;
+}
+
+.project-footer a {
   color: var(--Palette2);
 }
 

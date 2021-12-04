@@ -23,6 +23,14 @@ function Project() {
                             </div>
                         </div>
                         <div className="project-footer">
+                            {project.deployed && 
+                                <span>
+                                    <a href={project.deployedLink} target="_blank" rel="noreferrer">
+                                        Visit Website
+                                    </a>
+                                    <span> // </span>
+                                </span>
+                            }
                             <a href={project.repoLink} target="_blank" rel="noreferrer">View Code</a>
                         </div>
                     </div>

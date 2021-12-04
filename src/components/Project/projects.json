@@ -2,7 +2,8 @@
     {
         "title": "My Portfolio Website",
         "techlist": "-CSS, SVG, GSAP, ScrollMagic-",
-        "imageName": "codingQuiz",
+        "imageName": "techBlog",
+        "imagetype": "svg",
         "laptop": false,
         "description": "A Responsive website that utilizes the power of creative SVG, Greensock (GSAP) & ScrollMagic powered animations to provide a fluid UI.",
         "deployed": true,
@@ -13,10 +14,77 @@
         "title": "Password Management Application",
         "techlist": "-Node.js, Express.js, ReST API, MySQL-",
         "imageName": "passStache",
+        "imagetype": "png",
         "laptop": false,
         "description": "Pass-stache is a powerful password storage tool, built with a team of 4 other developers.",
         "deployed": true,
-        "deployedLink": "https://taylorhakes.dev",
+        "deployedLink": "https://thawing-temple-09016.herokuapp.com/",
         "repoLink": "https://github.com/SadboiTay/portfolio2.0"
+    },
+    {
+        "title": "Blog/Social Application",
+        "techlist": "-MVC, Handlebars.js, Sequelize ORM-",
+        "imageName": "techBlog",
+        "imagetype": "png",
+        "laptop": false,
+        "description": "Solo built, full stack site where users can view and create blog posts and interact via the comments.",
+        "deployed": true,
+        "deployedLink": "https://obscure-peak-50471.herokuapp.com/",
+        "repoLink": "https://github.com/SadboiTay/tech-blog"
+    },
+    {
+        "title": "Live Weather Dashboard",
+        "techlist": "-jQuery, Bootstrap-",
+        "imageName": "weatherDashboard",
+        "imagetype": "png",
+        "laptop": false,
+        "description": "A one-page site built with jQuery and Bootstrap that uses the OpenWeather API to retrieve forecast data in specific cities. Local storage saves a search history.",
+        "deployed": true,
+        "deployedLink": "https://sadboitay.github.io/weather-dashboard/",
+        "repoLink": "https://github.com/SadboiTay/weather-dashboard"
+    },
+    {
+        "title": "Health/Fitness Plan Application",
+        "techlist": "-Bulma, GSAP-",
+        "imageName": "gitNShape",
+        "imagetype": "png",
+        "laptop": false,
+        "description": "Git N Shape is a health and fitness jump starter app that generates tailored workout and nutrition plans for users. Built with a team of 3 other developers.",
+        "deployed": true,
+        "deployedLink": "https://austinxewell.github.io/git-n-shape/",
+        "repoLink": "https://github.com/austinxewell/git-n-shape"
+    },
+    {
+        "title": "Automatic Website Generator",
+        "techlist": "-Node.js, inquirer npm, OOP-",
+        "imageName": "teamProfileGenerator",
+        "imagetype": "png",
+        "laptop": true,
+        "description": "Quickly generate a website displaying your team of employees through a command line app built with Node.js. Created with a focus on object oriented programming and test driven development.",
+        "deployed": false,
+        "deployedLink": null,
+        "repoLink": "https://github.com/SadboiTay/team-profile-generator"
+    },
+    {
+        "title": "Coding Quiz Application",
+        "techlist": "-HTML, CSS, Javascript-",
+        "imageName": "codingQuiz",
+        "imagetype": "png",
+        "laptop": false,
+        "description": "Test your knowledgee with a timed JavaScript quiz. Wrong answers dock your time and decrease your score.",
+        "deployed": true,
+        "deployedLink": "https://sadboitay.github.io/code-quiz/",
+        "repoLink": "https://github.com/SadboiTay/code-quiz"
+    },
+    {
+        "title": "README Generator",
+        "techlist": "-Node.js, inquirer npm, markdown-",
+        "imageName": "teamProfileGenerator",
+        "imagetype": "png",
+        "laptop": true,
+        "description": "A Node.js command line app that gathers prompted information from the user to dynamically generate a professional README document, letting developers focus more on their code.",
+        "deployed": false,
+        "deployedLink": null,
+        "repoLink": "https://github.com/SadboiTay/Professional-README-Generator"
     }
 ]
