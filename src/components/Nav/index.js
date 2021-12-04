@@ -1,14 +1,16 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+    const { navSelection } = props;
+
     return (
         <nav>
             <ul>
                 <li>
-                    About
+                    <span className={`${navSelection === 'about' && 'aboutActive'}`}>About</span>
                 </li>
                 <li>
-                    Portfolio
+                    <span className={`${navSelection === 'portfolio' && 'portfolioActive'}`}>Portfolio</span>
                 </li>
                 <li>
                     Contact

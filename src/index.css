@@ -29,6 +29,7 @@ code {
     monospace;
 }
 
+/* HEADER */
 .logo {
   width: 15%;
   margin: 1rem auto 0 auto;
@@ -45,9 +46,10 @@ code {
   text-align: center;
   font-family: inconsolata, monospace;
   font-weight: 400;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
 
+/* NAV */
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -55,3 +57,83 @@ nav ul {
   list-style: none;
   font-family: inconsolata, monospace;
 }
+
+.aboutActive {
+  color: var(--Palette3);
+}
+.portfolioActive {
+  color: var(--Palette2);
+}
+/* END NAV */
+/* END HEADER */
+
+
+/* PORTAL SCENE */
+#portal-scene {
+  width: 80%;
+  max-width: 500px;
+  margin: 3rem auto;
+  display: block;
+}
+
+.socials-about {
+  fill: var(--Palette5);
+  transition: fill .5s;
+}
+
+.socials-about:hover {
+  fill: var(--Palette4);
+}
+
+#github-about.animate-hover {
+  animation: hover 1.5s forwards infinite ease-in-out;
+}
+
+#spotify-about.animate-hover {
+  animation: hover 1.6s forwards infinite ease-in-out;
+}
+
+#linkedin-about.animate-hover {
+  animation: hover 1.4s forwards infinite ease-in-out;
+}
+
+@keyframes hover {
+  50% {
+      transform: translateY(15px);
+  }
+}
+
+#portal {
+  transform-origin: center;
+  -webkit-transform-origin: center;
+  stroke: var(--Palette3);
+  stroke-width: 30;
+}
+/* END PORTAL SCENE */
+
+/* ABOUT TEXT */
+.about-text2, .about-text3, .about-text4 {
+  margin: 0 1.5rem 1rem 1.5rem;
+}
+
+.about-text1 {
+  font-family: open sans;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.about-text2, .about-text3, .about-text4 {
+  font-family: open sans, sans serif;
+  font-size: .9rem;
+}
+
+.about-text1, .about-text4 {
+  color: var(--Palette3);
+}
+
+.about-text2, .about-text3 {
+  color: var(--Palette5);
+}
+/* END ABOUT TEXT */
