@@ -93,7 +93,7 @@ nav ul li:hover {
 #portal-scene {
   width: 80%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   display: block;
 }
 
@@ -273,12 +273,44 @@ nav ul li:hover {
 }
 
 /* FORM */
+#contactForm {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#contactForm label {
+  display: none;
+}
+
+#contactForm .inputWrap {
+  position: relative;
+  margin-bottom: 2rem;
+  top: 0
+}
+
+#contactForm .styledLabel {
+  text-transform: uppercase;
+  position: absolute;
+  top: -.2em;
+  pointer-events: none;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out
+}
+
+#contactForm .styledLabel:after {
+  display: inline-block;
+  content: attr(data-text);
+  pointer-events: none
+}
+
 input[type=text], input[type=number], input[type=email], textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #c22085;
+  border-bottom: 1px solid var(--Palette4);
   background: 0 0;
   display: block;
+  margin: 0 auto;
   font-family: inconsolata, monospace;
   font-size: 25px;
   font-size: 1.5rem;
@@ -287,26 +319,21 @@ input[type=text], input[type=number], input[type=email], textarea {
   border-radius: 0;
   -webkit-border-radius: 0
 }
-input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, textarea:focus {
-  animation: changeBorder 10s linear infinite alternate;
-  transition: border .25s ease-in-out
-}
 
 textarea {
-  height: 3em
+  height: 4em
 }
 
 input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #contactForm textarea:focus {
   border: none;
-  border-bottom: 1px solid #c22085;
+  border-bottom: 1px solid var(--Palette4);
   outline: none
 }
 
-input:focus~.styledLabel, #contactForm textarea:focus~.styledLabel, .inputNotEmpty .styledLabel {
+#contactForm input:focus~.styledLabel, #contactForm textarea:focus~.styledLabel, .inputNotEmpty .styledLabel {
   top: -1.4em;
-  font-size: 15px;
-  font-size: 1rem;
-  color: #c22085
+  font-size: .8rem;
+  color: var(--Palette4)
 }
 /* END FORM */
 /* END CONTACT */

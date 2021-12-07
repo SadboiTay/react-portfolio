@@ -41,18 +41,21 @@ function ContactForm() {
                 <a className ="email-address email-domain" href="mailto:hello@taylorhakes.dev">taylorhakes.dev</a>
             </div>
             <h2>Or, drop in a message here:</h2>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
+            <form id="contactForm" onSubmit={handleSubmit}>
+                <div className="inputWrap">
+                    <label htmlFor="name">Name</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                    <span className="styledLabel" data-text="name"></span>
                 </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
+                <div className="inputWrap">
+                    <label htmlFor="email">Email address</label>
                     <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
+                    <span className="styledLabel" data-text="email"></span>
                 </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
+                <div className="inputWrap">
+                    <label htmlFor="message">Message</label>
                     <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                    <span className="styledLabel" data-text="message"></span>
                 </div>
                 {errorMessage && (
                     <div>
