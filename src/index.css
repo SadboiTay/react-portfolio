@@ -16,7 +16,7 @@
   --Palette1: #E3B8AA;
   --Palette2: #DE7254;
   --Palette3: #2FC6A8;
-  --Palette4: #c02156;
+  --Palette4: #c22085;
   --Palette5: #e9b171;
   --Palette6: #011638;
 }
@@ -337,3 +337,42 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
 }
 /* END FORM */
 /* END CONTACT */
+
+/* RESUME */
+.palette3Span {
+  color: var(--Palette3);
+}
+.palette2Span {
+  color: var(--Palette2);
+}
+.palette4Span {
+  color: var(--Palette4);
+}
+.palette1Span {
+  color: var(--Palette1);
+}
+
+#resumeSection {
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: .05rem;
+}
+
+#resumeSection h2 {
+  font-family: open sans;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  font-weight: 300;
+  color: var(--Palette5);
+  margin-top: 1.5rem;
+}
+
+#resumeSection h3 {
+  font-family: open sans;
+  font-style: italic;
+  font-size: .9rem;
+  font-weight: 300;
+  color: var(--Palette5);
+}
+/* END RESUME */
