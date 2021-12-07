@@ -1,42 +1,48 @@
 import React from 'react';
-import projects from './projects.json';
 
-function Project() {
+function Project(props) {
+    const {
+        title,
+        techlist,
+        imageName,
+        laptop,
+        description,
+        deployed,
+        deployedLink,
+        repoLink
+    } = props;
+
     return (
-        <section id="project-section">
-            {projects.map((project) => (
-                <div className="project-card">
-                    <div className="project-content">
-                        <h2 className="project-title">{project.title}</h2>
-                        <h3 className="project-techlist">{project.techlist}</h3>
-                        <div className="project-body">
-                            <div className="project-img-wrap">
-                                <img
-                                    className={`mockup ${project.laptop && 'laptopMockup'}`}
-                                    src={require(`../../assets/images/mockups/${project.imageName}.png`).default} 
-                                    alt={project.title}
-                                    key={project.name}
-                                />
-                            </div>
-                            <div className="project-description">
-                                {project.description}
-                            </div>
-                        </div>
-                        <div className="project-footer">
-                            {project.deployed && 
-                                <span>
-                                    <a href={project.deployedLink} target="_blank" rel="noreferrer">
-                                        Visit Website
-                                    </a>
-                                    <span> // </span>
-                                </span>
-                            }
-                            <a href={project.repoLink} target="_blank" rel="noreferrer">View Code</a>
-                        </div>
+        <div className="project-card">
+            <div className="project-content">
+                <h2 className="project-title">{title}</h2>
+                <h3 className="project-techlist">{techlist}</h3>
+                <div className="project-body">
+                    <div className="project-img-wrap">
+                        <img
+                            className={`mockup ${laptop && 'laptopMockup'}`}
+                            src={require(`../../assets/images/mockups/${imageName}.png`).default}
+                            alt={title}
+                            key={title}
+                        />
+                    </div>
+                    <div className="project-description">
+                        {description}
                     </div>
                 </div>
-            ))}
-        </section>
+                <div className="project-footer">
+                    {deployed &&
+                        <span>
+                            <a href={deployedLink} target="_blank" rel="noreferrer">
+                                Visit Website
+                            </a>
+                            <span> // </span>
+                        </span>
+                    }
+                    <a href={repoLink} target="_blank" rel="noreferrer">View Code</a>
+                </div>
+            </div>
+        </div>
     )
 }
 
