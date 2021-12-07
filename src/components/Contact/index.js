@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../assets/utils/helpers';
+import { validateEmail, capitalizeFirstLetter } from '../../assets/utils/helpers';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -11,13 +11,13 @@ function ContactForm() {
             const isValid = validateEmail(e.target.value);
 
             if (!isValid) {
-                setErrorMessage('Your email is invalid.');
+                setErrorMessage('Enter a valid email address.');
             } else {
                 setErrorMessage('');
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
+                setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
             } else {
                 setErrorMessage('');
             }
@@ -26,7 +26,23 @@ function ContactForm() {
         if (!errorMessage) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
         }
+
+        if (e.target.name === 'name') {
+            if (name.length >= 1) {
+                console.log(name)
+                const $styledNameLabel = document.querySelector('#styledNameLabel')
+                $styledNameLabel.classList.add('inputNotEmpty')
+            }
+        }
     }
+
+    // function CheckFormInput() { 
+    //     if (name === "") { 
+    //         e.target.closest('.inputWrap').removeClass('inputNotEmpty'); 
+    //     } else { 
+    //         e.target.closest('.inputWrap').addClass('inputNotEmpty'); 
+    //     } 
+    // }
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -38,14 +54,14 @@ function ContactForm() {
             <h2>Feel free to shoot me an email:</h2>
             <div className="email-block">
                 <a className="email-address" href="mailto:hello@taylorhakes.dev">hello@</a><br />
-                <a className ="email-address email-domain" href="mailto:hello@taylorhakes.dev">taylorhakes.dev</a>
+                <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">taylorhakes.dev</a>
             </div>
             <h2>Or, drop in a message here:</h2>
             <form id="contactForm" onSubmit={handleSubmit}>
-                <div className="inputWrap">
+                <div className="inputWrap inputNotEmpty">
                     <label htmlFor="name">Name</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                    <span className="styledLabel" data-text="name"></span>
+                    <span id="styledNameLabel" className="styledLabel" data-text="name"></span>
                 </div>
                 <div className="inputWrap">
                     <label htmlFor="email">Email address</label>
