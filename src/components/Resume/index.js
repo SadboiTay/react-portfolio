@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Resume() {
     const frontEndTechList = ['React', 'HTML5', 'CSS3', 'JavaScript ES6+', 'Greensock Animation Platform', 'SVG', 'Responsive Design', 'Bootstrap', 'Mobile-first Design']
@@ -20,27 +21,34 @@ function Resume() {
                 <span className="palette1Span"> Node.js</span> -
             </h3>
 
-            <div className="resumeButtonWrap">
+            <Link to="./taylor-hakes-resume.pdf" target="_blank" download>
                 <button id="resumeButton">Download Resume</button>
-            </div>
+            </Link>
 
-            <h2>Front end proficiencies:</h2>
-            
-            <ul>
-                {frontEndTechList.map(item => (
-                    <li key={item}>
-                        {item}
-                    </li>
-                ))}
-            </ul>
-            <h2>Back end proficiencies:</h2>
-            <ul>
-                {backEndTechList.map(item => (
-                    <li key={item}>
-                        {item}
-                    </li>
-                ))}
-            </ul>
+            <div className="techSection">
+                <div className="proficiencyCard">
+                    <h2>Front end proficiencies:</h2>
+                    
+                    <ul>
+                        {frontEndTechList.map(item => (
+                            <li key={item}>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+    
+                <div className="proficiencyCard">
+                    <h2>Back end proficiencies:</h2>
+                    <ul>
+                        {backEndTechList.map(item => (
+                            <li key={item}>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
         </section>
     )
 }

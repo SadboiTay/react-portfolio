@@ -18,7 +18,12 @@ function Footer({ navSelection }) {
                     (navSelection === 'resume' && styles.resumeSection)
                 }
                     d="M203.5 461.5L405.5 347M203.5 461.5L1.99998 347M203.5 461.5L304.5 289.5M203.5 461.5L102.5 289.5M405.5 347L405.5 117.5M405.5 347L304.5 289.5M405.5 117.5L204 2.00001M405.5 117.5L304.5 289.5M405.5 117.5L304.5 117.25L203.5 117M204 2.00001L2 116M204 2.00001L203.5 117M2 116L1.99998 347M2 116L203.5 117M2 116L102.5 289.5M1.99998 347L102.5 289.5" />
-                <path id="backtotop-arrow" d="M203.5 117L304.5 289.5L102.5 289.5L203.5 117Z" />
+                <path id="backtotop-arrow" className={
+                    (navSelection === 'about' && styles.aboutSection) ||
+                    (navSelection === 'portfolio' && styles.portfolioSection) ||
+                    (navSelection === 'contact' && styles.contactSection) ||
+                    (navSelection === 'resume' && styles.resumeSection)
+                } d="M203.5 117L304.5 289.5L102.5 289.5L203.5 117Z" />
             </svg>
             <div className="socials-block">
                 <a href="https://github.com/SadboiTay" target="_blank" rel="noreferrer">

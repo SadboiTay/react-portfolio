@@ -11,6 +11,11 @@
   background: var(--Palette4);
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* SCROLLBAR */
 /* width */
 ::-webkit-scrollbar {
@@ -34,6 +39,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, var(--Palette1) 25%, var(--Palette2) 0, var(--Palette2) 50%, var(--Palette3) 0, var(--Palette3) 75%, var(--Palette4) 0);
 }
+
 /* END SCROLLBAR */
 
 :root {
@@ -52,8 +58,6 @@ body {
   background-color: var(--PaletteGrey);
   font-family: sans-serif;
   color: white;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 button {
@@ -76,8 +80,20 @@ code {
 }
 
 /* HEADER */
+header {
+  position: sticky;
+  top: -12%;
+  z-index: 99;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  background-color: var(--PaletteGrey);
+
+  background: rgba(12, 12, 12, 0.1);
+  backdrop-filter: blur(1rem);
+}
+
 .logo {
-  width: 15%;
+  width: 80px;
   margin: 1rem auto 0 auto;
   display: block;
 }
@@ -102,7 +118,6 @@ nav ul {
   align-items: center;
   list-style: none;
   font-family: inconsolata, monospace;
-  margin-bottom: 3rem;
 }
 
 nav ul li:hover {
@@ -146,15 +161,15 @@ nav ul li:hover {
   fill: var(--Palette4);
 }
 
-#github-about.animate-hover {
+#github-about {
   animation: hover 1.5s forwards infinite ease-in-out;
 }
 
-#spotify-about.animate-hover {
+#spotify-about {
   animation: hover 1.6s forwards infinite ease-in-out;
 }
 
-#linkedin-about.animate-hover {
+#linkedin-about {
   animation: hover 1.4s forwards infinite ease-in-out;
 }
 
@@ -382,16 +397,20 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
 #contactForm button {
   border: var(--Palette4) 1px solid;
 }
+
 /* END FORM */
 /* END CONTACT */
 
 /* RESUME */
-.resumeButtonWrap {
-  margin-top: 1.5rem;
+#resumeSection {
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: .05rem;
 }
 
 #resumeSection button {
   border: var(--Palette5) 1px solid;
+  margin-top: 1.5rem;
 }
 
 .palette3Span {
@@ -410,10 +429,31 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
   color: var(--Palette1);
 }
 
-#resumeSection {
-  text-align: center;
-  line-height: 1.5rem;
-  letter-spacing: .05rem;
+.techSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proficiencyCard {
+  box-shadow: inset 0px 0px 7px rgba(25, 25, 25, 1);
+  width: 90%;
+  margin-top: 2rem;
+  padding: 1.25rem;
+  width: 90%;
+}
+
+.proficiencyCard:hover {
+  box-shadow: 0px 0px 7px rgba(25, 25, 25, 1);
+}
+
+.proficiencyCard h2 {
+  margin-bottom: .5rem;
+}
+
+.proficiencyCard li {
+  list-style: none;
 }
 
 #resumeSection h2 {
@@ -423,7 +463,6 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
   line-height: 1.9rem;
   font-weight: 300;
   color: var(--Palette5);
-  margin-top: 1.5rem;
 }
 
 #resumeSection h3 {
@@ -458,14 +497,14 @@ footer {
 }
 
 #backtotop-arrow {
-  stroke: white;
+  fill: transparent;
   stroke-width: 20px;
-  animation: double-bounce 3s ease-in forwards infinite;
+  /* animation: double-bounce 3s ease-in forwards infinite; */
 }
 
-#backtotop-icosa:hover>#backtotop-arrow {
+/* #backtotop-icosa:hover>#backtotop-arrow {
   animation: bounce .5s ease forwards infinite;
-}
+} */
 
 @keyframes bounce {
   0% {
@@ -536,4 +575,5 @@ footer h5 {
   text-align: center;
   font-size: 12px;
 }
+
 /* END FOOTER */

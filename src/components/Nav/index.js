@@ -1,38 +1,43 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
     const { navSelection, setNavSelection } = props;
 
     return (
-        <nav>
+        <nav id='nav'>
             <ul>
                 <li>
-                    <span 
-                        onClick={() => setNavSelection('about')} 
+                    <Link
+                        to={'/about'}
+                        onClick={() => setNavSelection('about')}
                         className={`${navSelection === 'about' && 'aboutActive'}`}>
-                            About
-                    </span>
+                        About
+                    </Link>
                 </li>
                 <li>
-                    <span 
-                        onClick={() => setNavSelection('portfolio')} 
+                    <Link
+                        to={'/portfolio'}
+                        onClick={() => setNavSelection('portfolio')}
                         className={`${navSelection === 'portfolio' && 'portfolioActive'}`}>
-                            Portfolio
-                    </span>
+                        Portfolio
+                    </Link>
                 </li>
                 <li>
-                <span 
-                        onClick={() => setNavSelection('contact')} 
+                    <Link
+                        to={'/contact'}
+                        onClick={() => setNavSelection('contact')}
                         className={`${navSelection === 'contact' && 'contactActive'}`}>
-                            Contact
-                    </span>
+                        Contact
+                    </Link>
                 </li>
                 <li>
-                <span 
-                        onClick={() => setNavSelection('resume')} 
+                    <Link
+                        to={'/resume'}
+                        onClick={() => setNavSelection('resume')}
                         className={`${navSelection === 'resume' && 'resumeActive'}`}>
-                            Resume
-                    </span>
+                        Resume
+                    </Link>
                 </li>
             </ul>
         </nav>
