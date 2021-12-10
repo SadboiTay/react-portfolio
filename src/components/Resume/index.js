@@ -13,14 +13,22 @@ function Resume() {
                 <span className="palette4Span">R</span>.
                 <span className="palette1Span">N</span>.
             </h2>
+
             <h3>- <span className="palette3Span">MongoDB</span>,
                 <span className="palette2Span"> Express.js</span>,
                 <span className="palette4Span"> React</span>,
-                <span className="palette1Span"> Node.js</span> -</h3>
+                <span className="palette1Span"> Node.js</span> -
+            </h3>
+
+            <div className="resumeButtonWrap">
+                <button id="resumeButton">Download Resume</button>
+            </div>
+
             <h2>Front end proficiencies:</h2>
+            
             <ul>
                 {frontEndTechList.map(item => (
-                    <li>
+                    <li key={item}>
                         {item}
                     </li>
                 ))}
@@ -28,7 +36,7 @@ function Resume() {
             <h2>Back end proficiencies:</h2>
             <ul>
                 {backEndTechList.map(item => (
-                    <li>
+                    <li key={item}>
                         {item}
                     </li>
                 ))}

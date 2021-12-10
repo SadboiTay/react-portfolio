@@ -11,6 +11,31 @@
   background: var(--Palette4);
 }
 
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--Palette1) 0%, var(--Palette2) 33%, var(--Palette3) 66%, var(--Palette4) 100%);
+  transition: all .5s ease-out;
+  /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--Palette1) 25%, var(--Palette2) 0, var(--Palette2) 50%, var(--Palette3) 0, var(--Palette3) 75%, var(--Palette4) 0);
+}
+/* END SCROLLBAR */
+
 :root {
   --PaletteGrey: #0c0c0c;
   --Palette1: #E3B8AA;
@@ -27,6 +52,17 @@ body {
   background-color: var(--PaletteGrey);
   font-family: sans-serif;
   color: white;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+button {
+  background-color: var(--PaletteGrey);
+  padding: .75rem 1.5rem;
+  color: white;
+  font-family: inconsolata, monospace;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
 }
 
 a {
@@ -76,15 +112,19 @@ nav ul li:hover {
 .aboutActive {
   color: var(--Palette3);
 }
+
 .portfolioActive {
   color: var(--Palette2);
 }
+
 .contactActive {
   color: var(--Palette4);
 }
+
 .resumeActive {
   color: var(--Palette5);
 }
+
 /* END NAV */
 /* END HEADER */
 
@@ -158,6 +198,7 @@ nav ul li:hover {
 .about-text2, .about-text3 {
   color: var(--Palette5);
 }
+
 /* END ABOUT TEXT */
 
 /* PROJECT CARDS */
@@ -230,14 +271,15 @@ nav ul li:hover {
   display: block;
   margin: 0 auto;
 }
+
 /* END PROJECT CARDS */
 
 /* CONTACT */
-#contact-section {
+#contactSection {
   font-family: inconsolata, monospace;
 }
 
-#contact-section h2 {
+#contactSection h2 {
   font-family: open sans;
   font-style: italic;
   font-size: 1.2rem;
@@ -335,19 +377,35 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
   font-size: .8rem;
   color: var(--Palette4)
 }
+
+
+#contactForm button {
+  border: var(--Palette4) 1px solid;
+}
 /* END FORM */
 /* END CONTACT */
 
 /* RESUME */
+.resumeButtonWrap {
+  margin-top: 1.5rem;
+}
+
+#resumeSection button {
+  border: var(--Palette5) 1px solid;
+}
+
 .palette3Span {
   color: var(--Palette3);
 }
+
 .palette2Span {
   color: var(--Palette2);
 }
+
 .palette4Span {
   color: var(--Palette4);
 }
+
 .palette1Span {
   color: var(--Palette1);
 }
@@ -375,4 +433,107 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
   font-weight: 300;
   color: var(--Palette5);
 }
+
 /* END RESUME */
+
+/* FOOTER */
+footer {
+  padding: 50px 0 20px 0;
+  border-top: 1px solid var(--Palette1);
+  position: relative;
+  margin-top: 7rem;
+}
+
+#backtotop-icosa {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--PaletteGrey);
+}
+
+#backtotop-frame {
+  stroke-width: 20px;
+}
+
+#backtotop-arrow {
+  stroke: white;
+  stroke-width: 20px;
+  animation: double-bounce 3s ease-in forwards infinite;
+}
+
+#backtotop-icosa:hover>#backtotop-arrow {
+  animation: bounce .5s ease forwards infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-14%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes double-bounce {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  62.5% {
+    transform: translateY(-14%);
+  }
+
+  75% {
+    transform: translateY(0%);
+  }
+
+  87.5% {
+    transform: translateY(-14%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.socials-block {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+footer h5 {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer-socials {
+  width: 32px;
+  margin: 0 5px;
+  transition: all .25s ease-in-out;
+}
+
+.footer-socials:hover {
+  fill: white;
+  margin: 0 10px;
+}
+
+#copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+/* END FOOTER */

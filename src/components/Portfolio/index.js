@@ -8,6 +8,7 @@ function Portfolio() {
             {projects.map((project) => (
                 <Project 
                     title={project.title}
+                    key={project.title}
                     techlist={project.techlist}
                     imageName={project.imageName}
                     laptop={project.laptop}

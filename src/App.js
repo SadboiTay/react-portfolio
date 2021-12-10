@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   const [navSelection, setNavSelection] = useState('about');
@@ -18,6 +19,7 @@ function App() {
       {navSelection === 'portfolio' && <Portfolio />}
       {navSelection === 'contact' && <Contact />}
       {navSelection === 'resume' && <Resume />}
+      <Footer navSelection={navSelection} />
     </div>
   );
 }

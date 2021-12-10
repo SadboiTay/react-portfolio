@@ -50,7 +50,7 @@ function ContactForm() {
     }
 
     return (
-        <section id="contact-section">
+        <section id="contactSection">
             <h2>Feel free to shoot me an email:</h2>
             <div className="email-block">
                 <a className="email-address" href="mailto:hello@taylorhakes.dev">hello@</a><br />

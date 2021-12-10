@@ -1,0 +1,36 @@
+.aboutSection {
+    color: var(--Palette3);
+    stroke: var(--Palette3);
+    fill: var(--Palette3);
+}
+
+.portfolioSection {
+    color: var(--Palette2);
+    stroke: var(--Palette2);
+    fill: var(--Palette2);
+}
+
+.contactSection {
+    color: var(--Palette4);
+    stroke: var(--Palette4);
+    fill: var(--Palette4);
+}
+
+.resumeSection {
+    color: var(--Palette5);
+    stroke: var(--Palette5);
+    fill: var(--Palette5);
+}
+
+.footerAboutSectionBorder {
+    border-top: 1px solid var(--Palette3);
+}
+.footerPortfolioSectionBorder {
+    border-top: 1px solid var(--Palette2);
+}
+.footerContactSectionBorder {
+    border-top: 1px solid var(--Palette4);
+}
+.footerResumeSectionBorder {
+    border-top: 1px solid var(--Palette5);
+}
