@@ -27,22 +27,8 @@ function ContactForm() {
             setFormState({ ...formState, [e.target.name]: e.target.value });
         }
 
-        if (e.target.name === 'name') {
-            if (name.length >= 1) {
-                console.log(name)
-                const $styledNameLabel = document.querySelector('#styledNameLabel')
-                $styledNameLabel.classList.add('inputNotEmpty')
-            }
-        }
+        console.log(formState.name);
     }
-
-    // function CheckFormInput() { 
-    //     if (name === "") { 
-    //         e.target.closest('.inputWrap').removeClass('inputNotEmpty'); 
-    //     } else { 
-    //         e.target.closest('.inputWrap').addClass('inputNotEmpty'); 
-    //     } 
-    // }
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -58,20 +44,17 @@ function ContactForm() {
             </div>
             <h2>Or, drop in a message here:</h2>
             <form id="contactForm" onSubmit={handleSubmit}>
-                <div className="inputWrap inputNotEmpty">
+                <div className="inputWrap">
                     <label htmlFor="name">Name</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                    <span id="styledNameLabel" className="styledLabel" data-text="name"></span>
                 </div>
                 <div className="inputWrap">
                     <label htmlFor="email">Email address</label>
                     <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
-                    <span className="styledLabel" data-text="email"></span>
                 </div>
                 <div className="inputWrap">
                     <label htmlFor="message">Message</label>
                     <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-                    <span className="styledLabel" data-text="message"></span>
                 </div>
                 {errorMessage && (
                     <div>

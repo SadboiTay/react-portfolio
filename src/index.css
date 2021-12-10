@@ -69,6 +69,11 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -139,7 +144,6 @@ nav ul li:hover {
 .resumeActive {
   color: var(--Palette5);
 }
-
 /* END NAV */
 /* END HEADER */
 
@@ -185,8 +189,17 @@ nav ul li:hover {
   stroke: var(--Palette3);
   stroke-width: 30;
 }
-
 /* END PORTAL SCENE */
+
+.ctaBtn {
+  border: 1px solid var(--Palette3);
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.ctaBtn:hover {
+  box-shadow: 0px 0px 7px var(--Palette3);
+}
 
 /* ABOUT TEXT */
 .about-text2, .about-text3, .about-text4 {
@@ -315,13 +328,13 @@ nav ul li:hover {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   text-transform: uppercase;
   font-weight: 350;
-  transition: all .5s ease-in-out;
+  transition: all .25s ease-in-out;
   color: white;
   text-decoration: none;
 }
 
 .email-address:hover~.email-domain, .email-domain:hover {
-  border-bottom: 1px solid var(--Palette3);
+  border-bottom: 2px solid var(--Palette1);
 }
 
 .email-domain {
@@ -329,14 +342,20 @@ nav ul li:hover {
   border-bottom: 1px solid var(--Palette4);
 }
 
+.error-text {
+  margin-bottom: 1rem;
+  color: var(--Palette4);
+}
+
 /* FORM */
 #contactForm {
   width: 80%;
+  max-width: 500px;
   margin: 1rem auto;
 }
 
 #contactForm label {
-  display: none;
+  color: white;
 }
 
 #contactForm .inputWrap {
@@ -345,23 +364,10 @@ nav ul li:hover {
   top: 0
 }
 
-#contactForm .styledLabel {
-  text-transform: uppercase;
-  position: absolute;
-  top: -.2em;
-  pointer-events: none;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
-}
-
-#contactForm .styledLabel:after {
-  display: inline-block;
-  content: attr(data-text);
-  pointer-events: none
-}
-
-input[type=text], input[type=number], input[type=email], textarea {
+input[type=text], 
+input[type=number], 
+input[type=email], 
+textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--Palette4);
@@ -369,8 +375,7 @@ input[type=text], input[type=number], input[type=email], textarea {
   display: block;
   margin: 0 auto;
   font-family: inconsolata, monospace;
-  font-size: 25px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: #fff;
   border-radius: 0;
@@ -378,26 +383,30 @@ input[type=text], input[type=number], input[type=email], textarea {
 }
 
 textarea {
-  height: 4em
+  height: 5em;
 }
 
-input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #contactForm textarea:focus {
+input[type=text]:focus, 
+input[type=number]:focus, 
+input[type=email]:focus, 
+#contactForm textarea:focus {
   border: none;
   border-bottom: 1px solid var(--Palette4);
   outline: none
 }
 
-#contactForm input:focus~.styledLabel, #contactForm textarea:focus~.styledLabel, .inputNotEmpty .styledLabel {
-  top: -1.4em;
-  font-size: .8rem;
+#contactForm input:focus~label, 
+#contactForm textarea:focus~label {
   color: var(--Palette4)
 }
-
 
 #contactForm button {
   border: var(--Palette4) 1px solid;
 }
 
+#contactForm button:hover {
+  box-shadow: 0px 0px 7px var(--Palette4);
+}
 /* END FORM */
 /* END CONTACT */
 
@@ -411,6 +420,10 @@ input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, #cont
 #resumeSection button {
   border: var(--Palette5) 1px solid;
   margin-top: 1.5rem;
+}
+
+#resumeSection button:hover {
+  box-shadow: 0px 0px 7px var(--Palette5);
 }
 
 .palette3Span {

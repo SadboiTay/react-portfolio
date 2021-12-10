@@ -5,6 +5,7 @@ function About() {
     return (
         <section>
             <PortalScene />
+            <button className='ctaBtn'>Get In Touch</button>
             <div className="about-text-wrap">
                 <div className="about-text1">
                     I'm a full stack web developer and recent graduate from the Universty of Utah's coding bootcamp. My place in
