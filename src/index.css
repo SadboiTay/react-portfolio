@@ -162,7 +162,7 @@ nav ul li:hover {
 }
 
 .socials-about:hover {
-  fill: var(--Palette4);
+  fill: var(--Palette3);
 }
 
 #github-about {
@@ -263,8 +263,7 @@ nav ul li:hover {
   color: var(--Palette2);
 }
 
-.project-content,
-.project-content-odd {
+.project-content {
   margin: 1rem;
 }
 
@@ -335,7 +334,7 @@ nav ul li:hover {
 }
 
 .email-address:hover~.email-domain, .email-domain:hover {
-  border-bottom: 2px solid var(--Palette1);
+  border-bottom: 1px solid white;
 }
 
 .email-domain {
@@ -351,7 +350,7 @@ nav ul li:hover {
 /* FORM */
 #contactForm {
   width: 80%;
-  max-width: 500px;
+  max-width: 850px;
   margin: 1rem auto;
 }
 
@@ -617,6 +616,10 @@ footer h5 {
   html {
     font-size: 24px;
   }
+
+  nav ul li {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -651,7 +654,7 @@ footer h5 {
     backdrop-filter: blur(1rem);
   }
   
-  nav {
+  #nav {
     position: fixed;
     top: 0;
     right: -17%;
@@ -679,75 +682,35 @@ footer h5 {
   }
 
   .project-card {
-    width: 90%;
-  }
-
-  .project-footer {
-    margin-top: 1rem;
-  }
-
-  .project-body,
-  .project-body-odd {
+    width: 48%;
+    min-height: 800px;
     display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
   }
 
-  .project-body-odd {
-    flex-direction: row-reverse;
-  }
-
-  .project-p {
-    margin-top: 1rem;
-    font-size: .85rem;
-    letter-spacing: .03rem;
-    line-height: 1.5;
-    width: 40%;
-    text-align: left;
-  }
-
-  .project-p-odd {
-    text-align: right;
-  }
-
-  .project-img-wrap {
-    margin-top: 2rem;
-    width: 450px;
-  }
-
-  #laptop-wrap {
-    margin-top: 2rem;
-    width: 750px;
-  }
-
-  .iphone-mockup {
+  #project-section {
+    display: flex;
     width: 100%;
-    /* max-width: 350px; */
-    display: block;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
   }
 
-  .laptop-mockup {
-    width: 90%;
-    max-width: 750px;
-    display: block;
-    margin: 0 auto;
+  .email-block {
+    text-align: center;
+    min-height: 20vh;
+    overflow: hidden;
   }
 
-  .about-graphics-container {
-    position: absolute;
-    min-height: 50vh;
-    right: -10%;
-    top: 30%;
-    transform: translateY(-50%);
-    width: 60%;
+  .techSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .about-text-wrap {
-    width: 65%;
-    margin: 0 auto;
-    /* display: block; */
+  .proficiencyCard {
+    width: 49%;
   }
 }

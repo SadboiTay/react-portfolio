@@ -79,7 +79,7 @@
     {
         "title": "README Generator",
         "techlist": "-Node.js, inquirer npm, markdown-",
-        "imageName": "teamProfileGenerator",
+        "imageName": "readmeGenerator",
         "imagetype": "png",
         "laptop": true,
         "description": "A Node.js command line app that gathers prompted information from the user to dynamically generate a professional README document, letting developers focus more on their code.",
