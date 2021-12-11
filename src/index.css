@@ -98,18 +98,17 @@ header {
 }
 
 .logo {
-  width: 80px;
+  width: 120px;
   margin: 1rem auto 0 auto;
   display: block;
 }
 
 
 #th-logo-svg path {
-  fill: var(--Palette1);
+  fill: white;
 }
 
 #taylor-hakes {
-  color: var(--Palette1);
   text-align: center;
   font-family: inconsolata, monospace;
   font-weight: 400;
@@ -144,6 +143,7 @@ nav ul li:hover {
 .resumeActive {
   color: var(--Palette5);
 }
+
 /* END NAV */
 /* END HEADER */
 
@@ -189,6 +189,7 @@ nav ul li:hover {
   stroke: var(--Palette3);
   stroke-width: 30;
 }
+
 /* END PORTAL SCENE */
 
 .ctaBtn {
@@ -364,9 +365,9 @@ nav ul li:hover {
   top: 0
 }
 
-input[type=text], 
-input[type=number], 
-input[type=email], 
+input[type=text],
+input[type=number],
+input[type=email],
 textarea {
   width: 100%;
   border: none;
@@ -386,16 +387,16 @@ textarea {
   height: 5em;
 }
 
-input[type=text]:focus, 
-input[type=number]:focus, 
-input[type=email]:focus, 
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
 #contactForm textarea:focus {
   border: none;
   border-bottom: 1px solid var(--Palette4);
   outline: none
 }
 
-#contactForm input:focus~label, 
+#contactForm input:focus~label,
 #contactForm textarea:focus~label {
   color: var(--Palette4)
 }
@@ -407,6 +408,7 @@ input[type=email]:focus,
 #contactForm button:hover {
   box-shadow: 0px 0px 7px var(--Palette4);
 }
+
 /* END FORM */
 /* END CONTACT */
 
@@ -590,3 +592,162 @@ footer h5 {
 }
 
 /* END FOOTER */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* MEDA QUERIES */
+
+/*  */
+
+/*  */
+
+/*  */
+
+@media screen and (min-width: 580px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 28px;
+  }
+
+  .main-wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #taylor-hakes {
+    margin-top: 1.5rem;
+  }
+
+  .logo {
+    position: fixed;
+    left: -17%;
+    top: 0;
+    margin: initial;
+  }
+
+  header {
+    position: initial;
+    top: initial;
+    z-index: initial;
+    padding-bottom: 1rem;
+    margin-bottom: initial;
+    
+    background: initial;
+    backdrop-filter: blur(1rem);
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: -17%;
+    height: 20vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  nav ul li {
+    text-align: justify;
+  }
+
+  .aboutActive,
+  .portfolioActive,
+  .contactActive,
+  .resumeActive {
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .project-footer {
+    margin-top: 1rem;
+  }
+
+  .project-body,
+  .project-body-odd {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project-body-odd {
+    flex-direction: row-reverse;
+  }
+
+  .project-p {
+    margin-top: 1rem;
+    font-size: .85rem;
+    letter-spacing: .03rem;
+    line-height: 1.5;
+    width: 40%;
+    text-align: left;
+  }
+
+  .project-p-odd {
+    text-align: right;
+  }
+
+  .project-img-wrap {
+    margin-top: 2rem;
+    width: 450px;
+  }
+
+  #laptop-wrap {
+    margin-top: 2rem;
+    width: 750px;
+  }
+
+  .iphone-mockup {
+    width: 100%;
+    /* max-width: 350px; */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .laptop-mockup {
+    width: 90%;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-graphics-container {
+    position: absolute;
+    min-height: 50vh;
+    right: -10%;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 60%;
+  }
+
+  .about-text-wrap {
+    width: 65%;
+    margin: 0 auto;
+    /* display: block; */
+  }
+}

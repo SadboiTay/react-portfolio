@@ -7,8 +7,10 @@ function Header(props) {
 
     return (
         <header>
-            <Logo />
-            <h1 id="taylor-hakes">Taylor Hakes</h1>
+            <div className='brandWrap'>
+                <Logo />
+                <h1 id="taylor-hakes">Taylor Hakes</h1>
+            </div>
             <Nav
                 navSelection={navSelection}
                 setNavSelection={setNavSelection}

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className='main-wrap'>
         <Header
           navSelection={navSelection}
           setNavSelection={setNavSelection}
@@ -26,8 +26,8 @@ function App() {
             <Route exact path="/resume" component={Resume} />
           </Switch>
         </div>
-        <Footer navSelection={navSelection} />
       </div>
+      <Footer navSelection={navSelection} />
     </Router>
   );
 }
