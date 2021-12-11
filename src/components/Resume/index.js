@@ -21,7 +21,7 @@ function Resume() {
                 <span className="palette1Span"> Node.js</span> -
             </h3>
 
-            <Link to="./taylor-hakes-resume.pdf" target="_blank" download>
+            <Link to="/taylor-hakes-resume.pdf" target="_blank" download>
                 <button id="resumeButton">Download Resume</button>
             </Link>
 
