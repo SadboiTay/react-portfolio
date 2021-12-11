@@ -2,9 +2,9 @@
     {
         "title": "My Portfolio Website",
         "techlist": "-CSS, SVG, GSAP, ScrollMagic-",
-        "imageName": "techBlog",
-        "imagetype": "svg",
-        "laptop": false,
+        "imageName": "th-pencil-wireframe",
+        "imagetype": "png",
+        "laptop": true,
         "description": "A Responsive website that utilizes the power of creative SVG, Greensock (GSAP) & ScrollMagic powered animations to provide a fluid UI.",
         "deployed": true,
         "deployedLink": "https://taylorhakes.dev",
