@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import resume from '../../assets/files/taylor-hakes-resume.pdf';
 
 function Resume() {
     const frontEndTechList = ['React', 'HTML5', 'CSS3', 'JavaScript ES6+', 'Greensock Animation Platform', 'SVG', 'Responsive Design', 'Bootstrap', 'Mobile-first Design']
@@ -21,7 +22,7 @@ function Resume() {
                 <span className="palette1Span"> Node.js</span> -
             </h3>
 
-            <Link to="/taylor-hakes-resume.pdf" target="_blank" download>
+            <Link to={resume} target="_blank" download="Taylor_Hakes_Resume.pdf">
                 <button id="resumeButton">Download Resume</button>
             </Link>
 
