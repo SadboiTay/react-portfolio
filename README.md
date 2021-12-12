@@ -11,7 +11,7 @@
   # Website
   Check out the deployed site here: https://sadboitay.github.io/react-portfolio/
   
-  #Screenshot
+  # Screenshot
   
   ![image](https://user-images.githubusercontent.com/86327207/145722241-6cb829d6-8b19-4a44-a757-30462a4f615a.png)
 
