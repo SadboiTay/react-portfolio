@@ -1,7 +1,7 @@
 # React Portfolio 
 
   # Description
-  My personal developer portfolio: a single-page application built with React.
+  My personal developer portfolio: a single-page application built with React. React router provides a multi-page feel by updating the url bar and allowing the use of back and forth browser buttons, but in reality the content on the single HTML page is conditionally rendered according to the users selections.
 
   # Table of Contents
   * [Website](#website)
