@@ -1,5 +1,6 @@
 import React from 'react';
 import PortalScene from '../PortalScene';
+import { AboutQuote } from '../Quotes';
 
 function About() {
     return (
@@ -29,6 +30,7 @@ function About() {
                     plate of sushi.
                 </div>
             </div>
+            <AboutQuote />
         </section>
     )
 }
