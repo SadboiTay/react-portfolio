@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.aee4e4fd.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.c1ee6e3a.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.c1ee6e3a.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.3ff15fed.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.3ff15fed.js.map",
+    "main.js": "/react-portfolio/static/js/main.880f2f40.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.880f2f40.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.2bbeefc9.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.2bbeefc9.js.map",
     "static/js/2.0f0fd058.chunk.js": "/react-portfolio/static/js/2.0f0fd058.chunk.js",
     "static/js/2.0f0fd058.chunk.js.map": "/react-portfolio/static/js/2.0f0fd058.chunk.js.map",
-    "static/js/3.63838efa.chunk.js": "/react-portfolio/static/js/3.63838efa.chunk.js",
-    "static/js/3.63838efa.chunk.js.map": "/react-portfolio/static/js/3.63838efa.chunk.js.map",
+    "static/js/3.ed8acafb.chunk.js": "/react-portfolio/static/js/3.ed8acafb.chunk.js",
+    "static/js/3.ed8acafb.chunk.js.map": "/react-portfolio/static/js/3.ed8acafb.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.aee4e4fd.chunk.css.map": "/react-portfolio/static/css/main.aee4e4fd.chunk.css.map",
     "static/js/2.0f0fd058.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.0f0fd058.chunk.js.LICENSE.txt",
@@ -21,12 +21,13 @@
     "static/media/teamProfileGenerator.png": "/react-portfolio/static/media/teamProfileGenerator.5832a12f.png",
     "static/media/techBlog.png": "/react-portfolio/static/media/techBlog.118fc642.png",
     "static/media/th-pencil-wireframe.png": "/react-portfolio/static/media/th-pencil-wireframe.96ea804a.png",
+    "static/media/tomodachi.png": "/react-portfolio/static/media/tomodachi.bde9df99.png",
     "static/media/weatherDashboard.png": "/react-portfolio/static/media/weatherDashboard.4e359abb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ff15fed.js",
+    "static/js/runtime-main.2bbeefc9.js",
     "static/js/2.0f0fd058.chunk.js",
     "static/css/main.aee4e4fd.chunk.css",
-    "static/js/main.c1ee6e3a.chunk.js"
+    "static/js/main.880f2f40.chunk.js"
   ]
 }
