@@ -16,7 +16,7 @@
         "imageName": "tomodachi",
         "imagetype": "png",
         "laptop": false,
-        "description": "'Tomodochi' is a fun and simple browser game where players can cultivate a newborn planet and achieve a variety of clever endgames. Built from scratch in an agile environment with 3 other developers.",
+        "description": "'Tomodachi' is a fun and simple browser game where players can cultivate a newborn planet and achieve a variety of clever endgames. Built from scratch in an agile environment with 3 other developers.",
         "deployed": true,
         "deployedLink": "https://tomodachi-sadboitay.herokuapp.com/",
         "repoLink": "https://github.com/Johnson90cm/Tomodachi"
