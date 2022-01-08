@@ -87,7 +87,7 @@ code {
 /* HEADER */
 header {
   position: sticky;
-  top: -12%;
+  top: -15%;
   z-index: 99;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
