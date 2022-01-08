@@ -740,5 +740,6 @@ footer h5 {
 
   .proficiencyCard {
     width: 49%;
+    min-height: 600px;
   }
 }

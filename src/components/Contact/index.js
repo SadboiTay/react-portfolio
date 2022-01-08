@@ -39,8 +39,8 @@ function ContactForm() {
         <section id="contactSection">
             <h2>Feel free to shoot me an email:</h2>
             <div className="email-block">
-                <a className="email-address" href="mailto:hello@taylorhakes.dev">hello@</a><br />
-                <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">taylorhakes.dev</a>
+                <a className="email-address" href="mailto:hello@taylorhakes.dev">tg.hakes@</a><br />
+                <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">gmail.com</a>
             </div>
             <h2>Or, drop in a message here:</h2>
             <form id="contactForm" onSubmit={handleSubmit}>

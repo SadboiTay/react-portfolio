@@ -1,15 +1,5 @@
 [
-    {
-        "title": "My Portfolio Website",
-        "techlist": "-CSS, SVG, GSAP, ScrollMagic-",
-        "imageName": "th-pencil-wireframe",
-        "imagetype": "png",
-        "laptop": true,
-        "description": "A Responsive website that utilizes the power of creative SVG, Greensock (GSAP) & ScrollMagic powered animations to provide a fluid UI.",
-        "deployed": true,
-        "deployedLink": "https://taylorhakes.dev",
-        "repoLink": "https://github.com/SadboiTay/portfolio2.0"
-    },
+    
     {
         "title": "Retro Browser Game",
         "techlist": "React, MongoDB, Node.js, Express.js",
@@ -67,7 +57,7 @@
     },
     {
         "title": "Automatic Website Generator",
-        "techlist": "-Node.js, inquirer npm, OOP-",
+        "techlist": "-Node.js, npm inquirer, OOP-",
         "imageName": "teamProfileGenerator",
         "imagetype": "png",
         "laptop": true,
@@ -89,7 +79,7 @@
     },
     {
         "title": "README Generator",
-        "techlist": "-Node.js, inquirer npm, markdown-",
+        "techlist": "-Node.js, npm inquirer, markdown-",
         "imageName": "readmeGenerator",
         "imagetype": "png",
         "laptop": true,

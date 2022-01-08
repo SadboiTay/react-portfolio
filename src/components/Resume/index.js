@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import resume from '../../assets/files/taylor-hakes-resume.pdf';
+import resume from '../../assets/files/resume.pdf';
 
 function Resume() {
-    const frontEndTechList = ['React', 'HTML5', 'CSS3', 'JavaScript ES6+', 'Greensock Animation Platform', 'SVG', 'Responsive Design', 'Bootstrap', 'Mobile-first Design']
+    const frontEndTechList = ['React', 'Redux',   'HTML5', 'CSS3', 'JavaScript ES6+', 'jQuery', 'Greensock Animation Platform', 'SVG', 'Responsive Design', 'Bootstrap', 'Mobile-first Design']
 
-    const backEndTechList = ['Node.js', 'MongoDB', 'Express.js', 'REST APIs', 'GraphQL', 'jQuery', 'Handlebars.js', 'SQL', 'Sequelize']
+    const backEndTechList = ['Node.js', 'MongoDB', 'Express.js', 'REST APIs', 'GraphQL', 'Handlebars.js', 'SQL', 'Sequelize', 'NoSQL']
 
     return (
         <section id="resumeSection">

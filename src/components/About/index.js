@@ -6,7 +6,7 @@ function About() {
     return (
         <section>
             <PortalScene />
-            <a href="mailto:hello@taylorhakes.dev">
+            <a href="mailto:tg.hakes@gmail.com">
             <button className='ctaBtn'>Get In Touch</button>
             </a>
             <div className="about-text-wrap">
