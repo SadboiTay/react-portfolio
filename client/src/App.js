@@ -18,17 +18,21 @@ function App() {
           setNavSelection={setNavSelection}
         />
         <div className="container">
-          <Switch>
+          {/* <Switch>
             <Route exact path="/react-portfolio" component={About} />
             <Route exact path="/react-portfolio/about" component={About} />
             <Route exact path="/react-portfolio/portfolio" component={Portfolio} />
             <Route exact path="/react-portfolio/contact" component={Contact} />
             <Route exact path="/react-portfolio/resume" component={Resume} />
-          </Switch>
+          </Switch> */}
+          {navSelection === 'about' && <About />}
+          {navSelection === 'portfolio' && <Portfolio />}
+          {navSelection === 'contact' && <Contact />}
+          {navSelection === 'resume' && <Resume />}
         </div>
       </div>
       <Footer navSelection={navSelection} />
-    </Router>
+    // </Router>
   );
 }
 

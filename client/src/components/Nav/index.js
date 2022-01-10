@@ -7,37 +7,29 @@ function Nav(props) {
     return (
         <nav id='nav'>
             <ul>
-                <li>
-                    <Link
-                        to={'/react-portfolio/about'}
-                        onClick={() => setNavSelection('about')}
-                        className={`${navSelection === 'about' && 'aboutActive'}`}>
-                        About
-                    </Link>
+                <li
+                    onClick={() => setNavSelection('about')}
+                    className={`${navSelection === 'about' && 'aboutActive'}`}
+                >
+                    About
                 </li>
-                <li>
-                    <Link
-                        to={'/react-portfolio/portfolio'}
-                        onClick={() => setNavSelection('portfolio')}
-                        className={`${navSelection === 'portfolio' && 'portfolioActive'}`}>
-                        Portfolio
-                    </Link>
+                <li
+                    onClick={() => setNavSelection('portfolio')}
+                    className={`${navSelection === 'portfolio' && 'portfolioActive'}`}
+                >
+                    Portfolio
                 </li>
-                <li>
-                    <Link
-                        to={'/react-portfolio/contact'}
-                        onClick={() => setNavSelection('contact')}
-                        className={`${navSelection === 'contact' && 'contactActive'}`}>
-                        Contact
-                    </Link>
+                <li
+                    onClick={() => setNavSelection('contact')}
+                    className={`${navSelection === 'contact' && 'contactActive'}`}
+                >
+                    Contact
                 </li>
-                <li>
-                    <Link
-                        to={'/react-portfolio/resume'}
-                        onClick={() => setNavSelection('resume')}
-                        className={`${navSelection === 'resume' && 'resumeActive'}`}>
-                        Resume
-                    </Link>
+                <li
+                    onClick={() => setNavSelection('resume')}
+                    className={`${navSelection === 'resume' && 'resumeActive'}`}
+                >
+                    Resume
                 </li>
             </ul>
         </nav>
