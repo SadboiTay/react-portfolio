@@ -9,7 +9,7 @@ function Nav(props) {
             <ul>
                 <li>
                     <Link
-                        to={'/about'}
+                        to={'/react-portfolio/about'}
                         onClick={() => setNavSelection('about')}
                         className={`${navSelection === 'about' && 'aboutActive'}`}>
                         About
@@ -17,7 +17,7 @@ function Nav(props) {
                 </li>
                 <li>
                     <Link
-                        to={'/portfolio'}
+                        to={'/react-portfolio/portfolio'}
                         onClick={() => setNavSelection('portfolio')}
                         className={`${navSelection === 'portfolio' && 'portfolioActive'}`}>
                         Portfolio
@@ -25,7 +25,7 @@ function Nav(props) {
                 </li>
                 <li>
                     <Link
-                        to={'/contact'}
+                        to={'/react-portfolio/contact'}
                         onClick={() => setNavSelection('contact')}
                         className={`${navSelection === 'contact' && 'contactActive'}`}>
                         Contact
@@ -33,7 +33,7 @@ function Nav(props) {
                 </li>
                 <li>
                     <Link
-                        to={'/resume'}
+                        to={'/react-portfolio/resume'}
                         onClick={() => setNavSelection('resume')}
                         className={`${navSelection === 'resume' && 'resumeActive'}`}>
                         Resume

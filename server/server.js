@@ -11,9 +11,12 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
     console.log('sending index.html')
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    if (err) {
+        res.status(500).send(err)
+    }
 });
 
 app.listen(PORT, () => {
