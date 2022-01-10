@@ -70,7 +70,7 @@ function Footer({ navSelection }) {
                     (navSelection === 'contact' && styles.contactSection) ||
                     (navSelection === 'resume' && styles.resumeSection)
                 }
-            >© 2021 Taylor Hakes. All rights reserved.</h6>
+            >© {new Date().getFullYear()} Taylor Hakes. All rights reserved.</h6>
         </footer>
     )
 }
