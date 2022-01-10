@@ -16,7 +16,7 @@ function Header(props) {
                     to={"/react-portfolio"}
                     onClick={() => setNavSelection('about')}
                 >
-                    <h1 id="taylor-hakes">Taylor Hakes.</h1>
+                    <h1 id="taylor-hakes">Taylor Hakes</h1>
                 </Link>
             </div>
             <Nav
