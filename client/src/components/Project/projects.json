@@ -12,6 +12,17 @@
         "repoLink": "https://github.com/Johnson90cm/Tomodachi"
     },
     {
+        "title": "E-commerce Application",
+        "techlist": "-React, Redux, Node.js, Stripe-",
+        "imageName": "shop",
+        "imagetype": "png",
+        "laptop": false,
+        "description": "An e-commerce site built with React that manages global state with Redux, providing a traditional and seamless cart/checkout feature.",
+        "deployed": true,
+        "deployedLink": "https://redux-shop-sadboitay.herokuapp.com/",
+        "repoLink": "https://github.com/SadboiTay/shop-shop"
+    },
+    {
         "title": "Password Management Application",
         "techlist": "-Node.js, Express.js, ReST API, MySQL-",
         "imageName": "passStache",
