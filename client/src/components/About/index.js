@@ -20,9 +20,7 @@ function About() {
                     email and let's get in touch.
                 </div>
                 <div className="about-text3">
-                    I am proficient with a range of front and back-end languages, tools and frameworks like HTML5, CSS3,
-                    JavaScript,
-                    jQuery, Node.js, Bootstrap, SQL, Express.js, MongoDB, and React.
+                    Although I'm experienced in the full development life-cycle, I specialize on the client side with React, JavaScript, and CSS/Sass.
                 </div>
                 <div className="about-text4">
                     Outside the world of programming you might find me studying my favorite chess openings, entertaining my two
