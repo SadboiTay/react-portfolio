@@ -2,7 +2,7 @@
     
     {
         "title": "Retro Browser Game",
-        "techlist": "-React, MongoDB, Node.js, Express.js-",
+        "techlist": "-React, MongoDB, Node.js, GraphQL-",
         "imageName": "tomodachi",
         "imagetype": "png",
         "laptop": false,
