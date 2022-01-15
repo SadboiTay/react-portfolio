@@ -50,6 +50,7 @@ html {
   --Palette4: #c22085;
   --Palette5: #e9b171;
   --Palette6: #011638;
+  --white: white;
 }
 
 body {
@@ -97,16 +98,15 @@ header {
   backdrop-filter: blur(1rem);
 }
 
-.logo {
+.headerLogo {
   width: 120px;
   margin: 1rem auto 0 auto;
   display: block;
 }
 
-
-#th-logo-svg path {
+/* .th-logo-svg path {
   fill: white;
-}
+} */
 
 #taylor-hakes {
   text-align: center;
@@ -333,7 +333,7 @@ nav ul li:hover {
   font-family: inconsolata, monospace;
 }
 
-#contactSection h2 {
+#contactSection h2, h3 {
   font-family: open sans;
   font-style: italic;
   font-size: 1.2rem;
@@ -341,6 +341,12 @@ nav ul li:hover {
   text-align: center;
   font-weight: 300;
   color: var(--Palette4);
+}
+
+#contactSection h3 {
+  color: white;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .email-block {
@@ -411,6 +417,7 @@ textarea {
 
 textarea {
   height: 5em;
+  resize: vertical;
 }
 
 input[type=text]:focus,
@@ -434,8 +441,13 @@ input[type=email]:focus,
 #contactForm button:hover {
   box-shadow: 0px 0px 7px var(--Palette4);
 }
-
 /* END FORM */
+
+.contactLogo {
+  width: 3rem;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
 /* END CONTACT */
 
 /* RESUME */
@@ -664,7 +676,7 @@ footer h5 {
     margin-top: 1.5rem;
   }
 
-  .logo {
+  .headerLogo {
     position: fixed;
     left: -17%;
     top: 0;

@@ -5,7 +5,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   const [navSelection, setNavSelection] = useState('about');
@@ -32,7 +32,7 @@ function App() {
         </div>
       </div>
       <Footer navSelection={navSelection} />
-    // </Router>
+    </Router>
   );
 }
 

@@ -9,9 +9,16 @@ function Header(props) {
     return (
         <header>
             <div className='brandWrap'>
-                <Logo
-                    setNavSelection={setNavSelection}
-                />
+                <div className='headerLogo'>
+                    <Link
+                        to={"/react-portfolio"}
+                        onClick={() => setNavSelection('about')}
+                    >
+                        <Logo
+                            color={'--white'}
+                        />
+                    </Link>
+                </div>
                 <Link
                     to={"/react-portfolio"}
                     onClick={() => setNavSelection('about')}
