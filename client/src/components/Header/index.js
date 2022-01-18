@@ -11,7 +11,7 @@ function Header(props) {
             <div className='brandWrap'>
                 <div className='headerLogo'>
                     <Link
-                        to={"/react-portfolio"}
+                        to={"/"}
                         onClick={() => setNavSelection('about')}
                     >
                         <Logo
@@ -20,7 +20,7 @@ function Header(props) {
                     </Link>
                 </div>
                 <Link
-                    to={"/react-portfolio"}
+                    to={"/"}
                     onClick={() => setNavSelection('about')}
                 >
                     <h1 id="taylor-hakes">Taylor Hakes</h1>
