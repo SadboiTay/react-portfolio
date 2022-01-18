@@ -30,7 +30,7 @@
         "laptop": false,
         "description": "Pass-stache is a powerful password storage tool, built with a team of 4 other developers.",
         "deployed": true,
-        "deployedLink": "https://thawing-temple-09016.herokuapp.com/",
+        "deployedLink": "https://pass-stache-sadboitay.herokuapp.com/",
         "repoLink": "https://github.com/SadboiTay/portfolio2.0"
     },
     {
@@ -41,7 +41,7 @@
         "laptop": false,
         "description": "Solo built, full stack site where users can view and create blog posts and interact via the comments.",
         "deployed": true,
-        "deployedLink": "https://obscure-peak-50471.herokuapp.com/",
+        "deployedLink": "https://tech-blog-sadboitay.herokuapp.com/",
         "repoLink": "https://github.com/SadboiTay/tech-blog"
     },
     {
