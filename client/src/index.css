@@ -162,20 +162,21 @@ nav ul li:hover {
   transition: fill .5s;
 }
 
-.socials-about:hover {
-  fill: var(--Palette3);
+.socials-about-background {
+  fill: var(--PaletteGrey);
 }
 
-#github-about {
-  animation: hover 1.5s forwards infinite ease-in-out;
+#github-icon:hover > .socials-about,
+#linkedin-icon:hover > .socials-about {
+  fill: var(--white);
 }
 
-#spotify-about {
-  animation: hover 1.6s forwards infinite ease-in-out;
+#github-icon {
+  animation: hover 3s forwards infinite ease-in-out;
 }
 
-#linkedin-about {
-  animation: hover 1.4s forwards infinite ease-in-out;
+#linkedin-icon {
+  animation: hover 2.8s forwards infinite ease-in-out;
 }
 
 @keyframes hover {
@@ -184,9 +185,31 @@ nav ul li:hover {
   }
 }
 
+.portalIcosa {
+  fill: var(--Palette3);
+  transform-origin: center; 
+}
+
+#icosa-1 {
+  animation: fade 5s forwards infinite ease-in-out;
+}
+
+#icosa-2 {
+  animation: fade 6s forwards infinite ease-in-out 1s;
+}
+
+#icosa-3 {
+  animation: fade 7s forwards infinite ease-in-out 2s;
+}
+
+@keyframes fade {
+  50% {
+    opacity: .1;
+    transform: scale(.85);
+  }
+}
+
 #portal {
-  transform-origin: center;
-  -webkit-transform-origin: center;
   stroke: var(--Palette3);
   stroke-width: 30;
 }
