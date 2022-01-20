@@ -45,8 +45,8 @@ function ContactForm() {
             <section id="contactSection">
                 <h2>Feel free to shoot me an email:</h2>
                 <div className="email-block">
-                    <a className="email-address" href="mailto:hello@taylorhakes.dev">tg.hakes@</a><br />
-                    <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">gmail.com</a>
+                    <a className="email-address" href="mailto:hello@taylorhakes.dev">hello@</a><br />
+                    <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">taylorhakes.dev</a>
                 </div>
                 <h2>Or, drop in a message here:</h2>
                 <h3>Thanks for reaching out! I'll email you shortly.</h3>
@@ -61,8 +61,8 @@ function ContactForm() {
         <section id="contactSection">
             <h2>Feel free to shoot me an email:</h2>
             <div className="email-block">
-                <a className="email-address" href="mailto:hello@taylorhakes.dev">tg.hakes@</a><br />
-                <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">gmail.com</a>
+                <a className="email-address" href="mailto:hello@taylorhakes.dev">hello@</a><br />
+                <a className="email-address email-domain" href="mailto:hello@taylorhakes.dev">taylorhakes.dev</a>
             </div>
             <h2>Or, drop in a message here:</h2>
             <form id="contactForm">
