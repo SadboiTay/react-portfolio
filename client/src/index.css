@@ -310,6 +310,9 @@ nav ul li:hover {
 
 .project-content {
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-footer {
@@ -318,10 +321,16 @@ nav ul li:hover {
 
 .project-footer a {
   color: var(--Palette2);
+  border: 1px solid var(--Palette2);
+  padding: .25rem .5rem;
+  margin-right: .5rem;
+  transition: all .3s ease-in-out;
+  font-size: .9rem;
 }
 
 .project-footer a:hover {
   color: white;
+  box-shadow: 0px 0px 10px var(--Palette2);
 }
 
 .project-description {
@@ -750,6 +759,10 @@ footer h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .project-content {
+    min-height: 800px;
   }
 
   #project-section {

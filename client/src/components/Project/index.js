@@ -15,16 +15,24 @@ function Project(props) {
     return (
         <div className="project-card">
             <div className="project-content">
-                <h2 className="project-title">{title}</h2>
-                <h3 className="project-techlist">{techlist}</h3>
+                <div>
+                    <h2 className="project-title">{title}</h2>
+                    <h3 className="project-techlist">{techlist}</h3>
+                </div>
                 <div className="project-body">
                     <div className="project-img-wrap">
-                        <img
-                            className={`mockup ${laptop && 'laptopMockup'}`}
-                            src={require(`../../assets/images/mockups/${imageName}.png`).default}
-                            alt={title}
-                            key={title}
-                        />
+                        <a
+                            href={deployedLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img
+                                className={`mockup ${laptop && 'laptopMockup'}`}
+                                src={require(`../../assets/images/mockups/${imageName}.png`).default}
+                                alt={title}
+                                key={title}
+                            />
+                        </a>
                     </div>
                     <div className="project-description">
                         {description}
@@ -32,12 +40,9 @@ function Project(props) {
                 </div>
                 <div className="project-footer">
                     {deployed &&
-                        <span>
-                            <a href={deployedLink} target="_blank" rel="noreferrer">
-                                Visit Website
-                            </a>
-                            <span> // </span>
-                        </span>
+                        <a href={deployedLink} target="_blank" rel="noreferrer">
+                            Visit Website
+                        </a>
                     }
                     <a href={repoLink} target="_blank" rel="noreferrer">View Code</a>
                 </div>
