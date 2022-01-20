@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b6bc2b0.chunk.css",
-    "main.js": "/static/js/main.25726d61.chunk.js",
-    "main.js.map": "/static/js/main.25726d61.chunk.js.map",
+    "main.css": "/static/css/main.b5b39c33.chunk.css",
+    "main.js": "/static/js/main.7464f8d1.chunk.js",
+    "main.js.map": "/static/js/main.7464f8d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.767ebe6c.js",
     "runtime-main.js.map": "/static/js/runtime-main.767ebe6c.js.map",
     "static/js/2.bd938c79.chunk.js": "/static/js/2.bd938c79.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e74a0bec.chunk.js": "/static/js/3.e74a0bec.chunk.js",
     "static/js/3.e74a0bec.chunk.js.map": "/static/js/3.e74a0bec.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9b6bc2b0.chunk.css.map": "/static/css/main.9b6bc2b0.chunk.css.map",
+    "static/css/main.b5b39c33.chunk.css.map": "/static/css/main.b5b39c33.chunk.css.map",
     "static/js/2.bd938c79.chunk.js.LICENSE.txt": "/static/js/2.bd938c79.chunk.js.LICENSE.txt",
     "static/media/codingQuiz.png": "/static/media/codingQuiz.996ffd8c.png",
     "static/media/gitNShape.png": "/static/media/gitNShape.acac0ee0.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.767ebe6c.js",
     "static/js/2.bd938c79.chunk.js",
-    "static/css/main.9b6bc2b0.chunk.css",
-    "static/js/main.25726d61.chunk.js"
+    "static/css/main.b5b39c33.chunk.css",
+    "static/js/main.7464f8d1.chunk.js"
   ]
 }
