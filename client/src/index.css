@@ -8,7 +8,7 @@
 
 ::selection {
   color: white;
-  background: var(--Palette4);
+  background: var(--Palette3);
 }
 
 html {
@@ -30,14 +30,14 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(var(--Palette1) 0%, var(--Palette2) 33%, var(--Palette3) 66%, var(--Palette4) 100%);
+  background: linear-gradient(var(--Palette3) 0%, var(--Palette2) 33%, var(--Palette4) 66%, var(--Palette5) 100%);
   transition: all .5s ease-out;
   /* border-radius: 10px; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, var(--Palette1) 25%, var(--Palette2) 0, var(--Palette2) 50%, var(--Palette3) 0, var(--Palette3) 75%, var(--Palette4) 0);
+  background: linear-gradient(to bottom, var(--Palette3) 25%, var(--Palette2) 0, var(--Palette2) 50%, var(--Palette4) 0, var(--Palette4) 75%, var(--Palette5) 0);
 }
 
 /* END SCROLLBAR */
