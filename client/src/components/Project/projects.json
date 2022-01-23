@@ -23,6 +23,17 @@
         "repoLink": "https://github.com/SadboiTay/shop-shop"
     },
     {
+        "title": "Tic-Tac-Toe with Angular",
+        "techlist": "-Angular, TypeScript, Nebular-",
+        "imageName": "tictac",
+        "imagetype": "png",
+        "laptop": false,
+        "description": "An introduction into Angular and TypeScript. Built as a simple and minimal PWA.",
+        "deployed": true,
+        "deployedLink": "https://angular-tic-tac-toe-63d33.web.app/",
+        "repoLink": "https://github.com/SadboiTay/angular-tic-tac-toe"
+    },
+    {
         "title": "Password Management Application",
         "techlist": "-Node.js, Express.js, ReST API, MySQL-",
         "imageName": "passStache",
