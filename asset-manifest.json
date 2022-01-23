@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.8337a189.chunk.css",
-    "main.js": "/static/js/main.12601be7.chunk.js",
-    "main.js.map": "/static/js/main.12601be7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.767ebe6c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.767ebe6c.js.map",
-    "static/js/2.bd938c79.chunk.js": "/static/js/2.bd938c79.chunk.js",
-    "static/js/2.bd938c79.chunk.js.map": "/static/js/2.bd938c79.chunk.js.map",
-    "static/js/3.e74a0bec.chunk.js": "/static/js/3.e74a0bec.chunk.js",
-    "static/js/3.e74a0bec.chunk.js.map": "/static/js/3.e74a0bec.chunk.js.map",
+    "main.js": "/static/js/main.b27d18b1.chunk.js",
+    "main.js.map": "/static/js/main.b27d18b1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b0568048.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b0568048.js.map",
+    "static/js/2.f3d34073.chunk.js": "/static/js/2.f3d34073.chunk.js",
+    "static/js/2.f3d34073.chunk.js.map": "/static/js/2.f3d34073.chunk.js.map",
+    "static/js/3.613342a9.chunk.js": "/static/js/3.613342a9.chunk.js",
+    "static/js/3.613342a9.chunk.js.map": "/static/js/3.613342a9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.8337a189.chunk.css.map": "/static/css/main.8337a189.chunk.css.map",
-    "static/js/2.bd938c79.chunk.js.LICENSE.txt": "/static/js/2.bd938c79.chunk.js.LICENSE.txt",
+    "static/js/2.f3d34073.chunk.js.LICENSE.txt": "/static/js/2.f3d34073.chunk.js.LICENSE.txt",
     "static/media/codingQuiz.png": "/static/media/codingQuiz.996ffd8c.png",
     "static/media/gitNShape.png": "/static/media/gitNShape.acac0ee0.png",
     "static/media/passStache.png": "/static/media/passStache.6b0ba742.png",
@@ -22,13 +22,14 @@
     "static/media/teamProfileGenerator.png": "/static/media/teamProfileGenerator.5832a12f.png",
     "static/media/techBlog.png": "/static/media/techBlog.118fc642.png",
     "static/media/th-pencil-wireframe.png": "/static/media/th-pencil-wireframe.96ea804a.png",
+    "static/media/tictac.png": "/static/media/tictac.2bb85816.png",
     "static/media/tomodachi.png": "/static/media/tomodachi.bde9df99.png",
     "static/media/weatherDashboard.png": "/static/media/weatherDashboard.4e359abb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.767ebe6c.js",
-    "static/js/2.bd938c79.chunk.js",
+    "static/js/runtime-main.b0568048.js",
+    "static/js/2.f3d34073.chunk.js",
     "static/css/main.8337a189.chunk.css",
-    "static/js/main.12601be7.chunk.js"
+    "static/js/main.b27d18b1.chunk.js"
   ]
 }
