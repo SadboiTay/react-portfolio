@@ -10,7 +10,7 @@ function ContactForm() {
     const [readyForSubmit, setReadyForSubmit] = useState(false);
 
     // formspree
-    const [submissionState, handleSubmit] = useForm("mlezggzl");
+    const [submissionState, handleSubmit] = useForm("mgedobwk");
 
     function handleChange(e) {
         setFormState({ ...formState, [e.target.name]: e.target.value });
