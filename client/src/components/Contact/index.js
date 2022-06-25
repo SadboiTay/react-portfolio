@@ -3,7 +3,7 @@ import { validateEmail } from '../../assets/utils/helpers';
 import { useForm } from '@formspree/react';
 import Logo from '../Logo';
 
-function ContactForm() {
+function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
@@ -120,4 +120,4 @@ function ContactForm() {
     )
 }
 
-export default ContactForm;
+export default Contact;
