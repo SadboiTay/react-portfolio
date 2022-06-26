@@ -24,7 +24,7 @@
     },
     {
         "title": "Tic-Tac-Toe with Angular",
-        "techlist": "-AngularJS, TypeScript, Nebular-",
+        "techlist": "-Angular, TypeScript, Nebular-",
         "imageName": "tictac",
         "imagetype": "png",
         "laptop": false,
